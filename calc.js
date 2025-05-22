@@ -21,7 +21,7 @@ app.post('/calculate', (req, res) => {
       }
       result = num1 / num2;
       break;
-    default;
+    default:
 res.status(400).send({ error: 'Invalid Operation' });
       return;
   }
